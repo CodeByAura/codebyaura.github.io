@@ -1,0 +1,420 @@
+/* 
+    Name: Aura Cerveny
+    Date: 12/05/2024
+    Filename: styles.css 
+*/
+
+/* Body */
+body {
+    background-color: #f4e1d2; 
+    font-family: "Tahoma", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific styles for the homepage */
+body.homepage {
+    background-image: url('/images/home_page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Italiana font for h1 elements */
+h1 {
+    font-family: "Italiana", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #cf9c55; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f8d7b9;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #5c4438; 
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+header p {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Search Bar Section */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Search Input */
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #e09d3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #d08e2d;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+}
+
+/* Featured Recipe Section */
+main section {
+    margin-bottom: 30px;
+    background-color: rgba(255, 245, 225, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+main section h2 {
+    color: #5c4033;
+    font-size: 2em;
+}
+
+main section p {
+    font-size: 1.2em;
+    color: #5c4033;
+}
+
+main section a {
+    text-decoration: none;
+    color: #e09d3c;
+    font-weight: bold;
+}
+
+main section a:hover {
+    color: #d08e2d;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+    background-color: rgba(255, 245, 225, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.newsletter-signup h3 {
+    color: #5c4033;
+    font-size: 1.8em;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #e09d3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter-signup button:hover {
+    background-color: #d08e2d;
+}
+
+/* Footer style */
+footer {
+    background-color: #f8d7b9;
+    color: #5c4033;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5c4033;
+}
+
+footer a:hover {
+    color: #e09d3c;
+}
+
+/* Button - Scroll to Top */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: brown; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Dark grey background on hover */
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Font size for smaller screens */
+    }
+
+    header {
+        padding: 50px 20px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center; /* Center nav items on mobile */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between nav items */
+    }
+
+    .search-bar {
+        text-align: center;
+    }
+
+    .newsletter-signup {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* Recipe Sections - Overall Styling */
+.recipe-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(231, 202, 158, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* Recipe Section Titles (e.g., Breakfast, Lunch, etc) */
+.recipe-section h2 {
+    font-size: 2.5em; 
+    font-weight: bold;
+    color: #5c4033;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Recipe Images - Uniform size and rounded corners */
+.recipe-section img {
+    width: 100%;
+    max-width: 250px; /* Uniform width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    display: block;
+    margin: 10px auto;
+}
+
+/* Recipe Cards */
+.recipe-card {
+    background-color: #f1e0d0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Titles */
+.recipe-card h3 {
+    font-size: 1.8em;
+    color: #5c4033;
+    margin-bottom: 10px;
+}
+
+/* Recipe Descriptions */
+.recipe-card p {
+    font-size: 1.2em;
+    color: #5c4033;
+}
+
+/* Links in Recipe Cards */
+.recipe-card a {
+    text-decoration: none;
+    color: #e09d3c;
+    font-weight: bold;
+}
+
+.recipe-card a:hover {
+    color: #d08e2d; /* Slightly darker color for hover effect */
+}
+
+/* Add some space between each recipe card */
+.recipe-card + .recipe-card {
+    margin-top: 20px;
+}
+
+/* Smaller text for the scroll intro */
+#scroll-intro {
+    font-size: 26px;
+    font-family: "Tahoma", sans-serif;
+    color: #5c4033;
+}
+
+/* Centering the form on the submit page */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 245, 225, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Added styles to the form elements */
+form input,
+form textarea,
+form select,
+form button {
+    width: 100%; /* Make form elements take up the full width of the form */
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between form fields */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #e09d3c;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d08e2d;
+}
+
+/* Featured Recipe Section - Match the style of the recipe page */
+.featured-recipe-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(231, 202, 158, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* Featured Recipe Section Titles - Match font size and color */
+.featured-recipe-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #5c4033;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Featured Recipe Image - Match uniform style */
+.featured-recipe-section img {
+    width: 100%;
+    max-width: 250px; /* Uniform width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    display: block;
+    margin: 10px auto;
+}
+
+/* Featured Recipe Links - Match link colors */
+.featured-recipe-section a {
+    text-decoration: none;
+    color: #e09d3c;
+    font-weight: bold;
+}
+
+.featured-recipe-section a:hover {
+    color: #d08e2d;
+}

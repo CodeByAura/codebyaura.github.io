@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+    Name: Aura Cerveny
+    Date: 12/05/2024
+    Filename: contact.html
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - Flavor Quest</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <script>
+        function togglePhoneInput() {
+            var phoneField = document.getElementById("phone-input");
+            var phoneCheckbox = document.getElementById("phone-preference");
+            phoneField.style.display = phoneCheckbox.checked ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Please fill out the form below.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Browse Recipes</a></li>
+            <li><a href="submit.html">Submit a Recipe</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="featured-recipe.html">Featured Recipe</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <!-- Text Box -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+                <!-- Dropdown Box -->
+                <label for="inquiry-type">Type of Inquiry:</label><br>
+                <select id="inquiry-type" name="inquiry-type" required>
+                    <option value="Question">Question</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+
+                <!-- Radio Buttons -->
+                <label>Would you like to subscribe to our newsletter?</label><br>
+                <input type="radio" id="subscribe-yes" name="subscribe" value="Yes">
+                <label for="subscribe-yes">Yes</label><br>
+                <input type="radio" id="subscribe-no" name="subscribe" value="No" checked>
+                <label for="subscribe-no">No</label><br><br>
+
+                <!-- Checkboxes -->
+                <label for="contact-preference">Preferred Contact Method:</label><br>
+                <input type="checkbox" id="email-preference" name="contact-preference" value="Email">
+                <label for="email-preference">Email</label><br>
+                <input type="checkbox" id="phone-preference" name="contact-preference" value="Phone" onchange="togglePhoneInput()">
+                <label for="phone-preference">Phone</label><br><br>
+
+                <!-- Phone Input Field (Initially hidden) -->
+                <div id="phone-input" style="display:none;">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number"><br><br>
+                </div>
+
+                <!-- Message Text area -->
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flavor Quest.</p>
+        <ul>
+            <li><a href="mailto:contact@flavorquest.com">Email Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

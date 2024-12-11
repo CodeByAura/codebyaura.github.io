@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Name: Aura Cerveny
+    Date: 12/05/2024
+    Filename: submit.html
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Submit Your Recipe - Flavor Quest</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Submit Your Recipe</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Browse Recipes</a></li>
+                <li><a href="submit.html">Submit a Recipe</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="featured-recipe.html">Featured Recipe</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <!-- Name -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <!-- Email -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Recipe Title -->
+            <label for="title">Recipe Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter recipe title" required><br><br>
+
+            <!-- Category -->
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="desserts">Desserts</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <!-- Ingredients -->
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" placeholder="List the ingredients required" rows="5" required></textarea><br><br>
+
+            <!-- Instructions -->
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" placeholder="Write the steps to prepare the recipe" rows="5" required></textarea><br><br>
+ 
+            <!-- Image Upload -->
+            <label for="image">Upload an Image (Optional):</label>
+             <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Recipe</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flavor Quest.</p>
+        <ul>
+            <li><a href="mailto:contact@flavorquest.com">Email Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
